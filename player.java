@@ -1,34 +1,38 @@
-/* package codechef; // don't place package name! */
+public class Player {
+	private int gameScore = 0;
+	private int setScores = 0;
+	private int setsWon = 0;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+	public void incrementGameScore() {
+		++gameScore;
+	}
 
-/* Name of the class has to be "Main" only if the class is public. */
-class Player
-{
-    int gameScore = 0;
-    int[] setScores  = {0,0,0};
-    
-    public void incrementGameScore(){
-        ++gameScore;
-    }
-    
-    public int getGameScore() {
-        return gameScore;
-    }
-    
-    public void resetGameScore(){
-        gameScore = 0;
-    }
-    
-    public void incrementSetScore(int setNumber){
-        ++setScores[setNumber];
-    }
-    
-    public int getSetScore(int setNumber){
-        return setScores[setNumber];
-    }
-    
-    
+	public int getGameScore() {
+		return gameScore;
+	}
+
+	public void resetGameScore() {
+		gameScore = 0;
+	}
+
+	public void incrementSetScore() {
+		++setScores;
+	}
+
+	public int getSetScore() {
+		return setScores;
+	}
+	
+	public void resetSetScore() {
+		setScores = 0;
+	}
+	
+	public void incrementSetsWon() {
+		setsWon++;
+	}
+	
+	public int getSetsWon() {
+		return setsWon;
+	}
+
 }
